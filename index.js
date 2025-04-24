@@ -294,7 +294,7 @@ async function solveTurnstile(proxyAgent, clientKey, action = 'mining') {
 // 领取挖矿奖励（挖矿模式）
 async function claimMiningReward(token, proxyAgent, clientKey) {
   let retryCount = 0;
-  const maxRetries = 3;
+  const maxRetries = 1;
   
   while (retryCount <= maxRetries) {
     try {
